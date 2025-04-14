@@ -442,3 +442,4 @@ SELECT * FROM results WHERE date_first_sdr_emailed > first_sdr_deal_date
 10. Demo Booking Stage: A demo has been booked when the deal reaches stage '1659f86b-3eaf-4ad2-add7-eab19c98d593'.
 
 # Facts
+11. SDR Weekly Metrics: Track weekly metrics for SDR Hugh McMackin, including: number of demos booked, SQOs created, and demos booked on deals that become SQOs.
