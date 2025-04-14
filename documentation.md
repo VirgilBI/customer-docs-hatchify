@@ -438,5 +438,6 @@ SELECT * FROM results WHERE date_first_sdr_emailed > first_sdr_deal_date
 6. Monthly Queries: When querying the customer_recurring_revenue table on a monthly basis, use the filter 'WHERE dt = month_end_date' to summing across daily snapshots.
 7. SQOs: A deal is considered a "Sales Qualified Opportunity" (SQO) if it has entered the deal_stage with value '145109412'.
 8. Timestamps: Timestamps in the database are stored in ISO 8601 format with timezone offset.
+9. Demo Booking: A demo is automatically booked when a deal enters stage '149688431'. Demos can be tracked by SDR and month.
 
 # Facts
