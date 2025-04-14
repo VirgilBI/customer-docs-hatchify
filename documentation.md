@@ -443,3 +443,4 @@ SELECT * FROM results WHERE date_first_sdr_emailed > first_sdr_deal_date
 
 # Facts
 11. SDR Weekly Metrics: Track weekly metrics for SDR Hugh McMackin, including: number of demos booked, SQOs created, and demos booked on deals that become SQOs.
+12. Column Names: Two new columns introduced: demos_booked and opportunities_created
