@@ -438,11 +438,5 @@ SELECT * FROM results WHERE date_first_sdr_emailed > first_sdr_deal_date
 6. Monthly Queries: When querying the customer_recurring_revenue table on a monthly basis, use the filter 'WHERE dt = month_end_date' to summing across daily snapshots.
 7. SQOs: A deal is considered a "Sales Qualified Opportunity" (SQO) if it has entered the deal_stage with value '145109412'.
 8. Timestamps: Timestamps in the database are stored in ISO 8601 format with timezone offset.
-9. Demo Booking: A demo is automatically booked when a deal enters stage '149688431'. Demos can be tracked by SDR and month.
 10. Demo Booking Stage: A demo has been booked when the deal reaches stage '1659f86b-3eaf-4ad2-add7-eab19c98d593'.
-
-# Facts
-11. SDR Weekly Metrics: Track weekly metrics for SDR Hugh McMackin, including: number of demos booked, SQOs created, and demos booked on deals that become SQOs.
-12. Opportunities and Deals: An opportunity is created when a deal is created in Hubspot.
-13. SQOs vs Opportunities: Not all opportunities are Sales Qualified Opportunities (SQOs). A deal must reach a specific stage to be considered an SQO.
-14. Division Calculations: When dividing opps_reached_demo_stage by demos_booked, return 0 if the denominator (demos_booked) is 0.
+11. SQOs vs Opportunities: Not all opportunities are Sales Qualified Opportunities (SQOs). A deal must reach a specific stage to be considered an SQO.
