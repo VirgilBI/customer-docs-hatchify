@@ -443,4 +443,5 @@ SELECT * FROM results WHERE date_first_sdr_emailed > first_sdr_deal_date
 
 # Facts
 11. SDR Weekly Metrics: Track weekly metrics for SDR Hugh McMackin, including: number of demos booked, SQOs created, and demos booked on deals that become SQOs.
-12. Column Names: Two new columns introduced: demos_booked and opportunities_created
+12. Opportunities and Deals: An opportunity is created when a deal is created in Hubspot.
+13. SQOs vs Opportunities: Not all opportunities are Sales Qualified Opportunities (SQOs). A deal must reach a specific stage to be considered an SQO.
