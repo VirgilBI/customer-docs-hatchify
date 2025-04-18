@@ -431,8 +431,11 @@ A deal is considered 'won' if the property_hs_closed_won_date is not NULL.
 ## Connected Calls
 A connected call is any call where the 'disposition' is 'Connected'.
 
-4. Demo Booking: A demo is booked when an opportunity for the relevant account reaches stage '149688431'.
-5. Identifying Usage or Overage Revenue: When querying the customer_recurring_revenue table, you can identify "usage" or "overage" revenue by using the following filter:
+## Demo Booking
+A demo is booked when an opportunity for the relevant account reaches stage '149688431'.
+
+## Identifying Usage or Overage Revenue
+When querying the customer_recurring_revenue table, you can identify "usage" or "overage" revenue by using the following filter:
    ```sql
    WHERE lower(product_name) LIKE '%bot%'
       OR lower(product_name) LIKE '%sms%'
@@ -442,8 +445,16 @@ A connected call is any call where the 'disposition' is 'Connected'.
    ```
 
    Only exclude this revenue if explicitly told to do so
-6. Monthly Queries: When querying the customer_recurring_revenue table on a monthly basis, use the filter 'WHERE dt = month_end_date' to summing across daily snapshots.
-7. SQOs: A deal is considered a "Sales Qualified Opportunity" (SQO) if it has entered the deal_stage with value '145109412'.
-8. Timestamps: Timestamps in the database are stored in ISO 8601 format with timezone offset.
-8. Demos booked: A demo has been booked when a deal reaches stage '1659f86b-3eaf-4ad2-add7-eab19c98d593'.
+   
+## Monthly Queries
+When querying the customer_recurring_revenue table on a monthly basis, use the filter 'WHERE dt = month_end_date' to summing across daily snapshots.
+
+## SQOs A deal is considered a "Sales Qualified Opportunity" (SQO) if it has entered the deal_stage with value '145109412'.
+
+## Demos booked
+A demo has been booked when a deal reaches stage '1659f86b-3eaf-4ad2-add7-eab19c98d593'.
+
+## Timestamps
+Timestamps in the database are stored in ISO 8601 format with timezone offset.
+
 
