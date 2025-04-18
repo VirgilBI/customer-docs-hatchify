@@ -421,9 +421,16 @@ ORDER BY
 SELECT * FROM results WHERE date_first_sdr_emailed > first_sdr_deal_date
 
 # Important Notes for Querying
-1. Current AEs: When referring to "current AEs", this means owners with email addresses matthewv@usehatchapp.com, nicholas.wood@usehatchapp.com, and alex.marshall@usehatchapp.com.
-2. Won Deals: A deal is considered 'won' if the property_hs_closed_won_date is not NULL.
-3. Connected Calls: A connected call is any call where the 'disposition' is 'Connected'.
+
+## Current AEs
+When referring to "current AEs", this means owners with email addresses matthewv@usehatchapp.com, nicholas.wood@usehatchapp.com, and alex.marshall@usehatchapp.com.
+
+## Won Deals 
+A deal is considered 'won' if the property_hs_closed_won_date is not NULL.
+
+## Connected Calls
+A connected call is any call where the 'disposition' is 'Connected'.
+
 4. Demo Booking: A demo is booked when an opportunity for the relevant account reaches stage '149688431'.
 5. Identifying Usage or Overage Revenue: When querying the customer_recurring_revenue table, you can identify "usage" or "overage" revenue by using the following filter:
    ```sql
@@ -439,5 +446,4 @@ SELECT * FROM results WHERE date_first_sdr_emailed > first_sdr_deal_date
 7. SQOs: A deal is considered a "Sales Qualified Opportunity" (SQO) if it has entered the deal_stage with value '145109412'.
 8. Timestamps: Timestamps in the database are stored in ISO 8601 format with timezone offset.
 8. Demos booked: A demo has been booked when a deal reaches stage '1659f86b-3eaf-4ad2-add7-eab19c98d593'.
-9. Timestamps: Timestamps in the database are stored in ISO 8601 format with timezone offset.
 
